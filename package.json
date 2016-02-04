@@ -1,0 +1,16 @@
+{
+  "name": "switch-light",
+  "version": "0.0.1",
+  "description": "Simulator of light switch with socket.io",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danmoracr/light-switch.git"
+  },
+  "author": "Daniel Mora <develop@danielmora.cr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danmoracr/light-switch/issues"
+  },
+  "homepage": "https://github.com/danmoracr/light-switch#readme"
+}

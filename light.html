@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>Light</title>
+  <style>
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  .room {
+    width: 100;
+    height: 100vh;
+  }
+  .turnOn {
+    background: yellow;
+  }
+
+  .turnOff {
+    background: black;
+  }
+  </style>
+</head>
+<body>
+  <div class="room turnOff"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+  <script>
+  var socket = io();
+  $(function() {
+    socket.on('action', function(make) {
+      $('.room').removeClass('turnOff').removeClass('turnOff').addClass(make);
+    });
+  });
+  </script>
+</body>
+</html>
