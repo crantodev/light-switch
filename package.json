@@ -12,5 +12,9 @@
   "bugs": {
     "url": "https://github.com/danmoracr/light-switch/issues"
   },
-  "homepage": "https://github.com/danmoracr/light-switch#readme"
+  "homepage": "https://github.com/danmoracr/light-switch#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "socket.io": "^1.4.5"
+  }
 }
